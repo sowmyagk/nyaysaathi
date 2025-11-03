@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyaySaathi - Multilingual Legal Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>NyaySaathi</h1>
+    <p class="subtitle">ML-Based Multilingual Legal Assistance System</p>
+
+    <!-- Language Selector -->
+    <div class="lang-select">
+      <label for="language">Choose Language:</label>
+      <select id="language">
+        <option value="en-IN">English</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="kn-IN">Kannada</option>
+        <option value="te-IN">Telugu</option>
+        <option value="ta-IN">Tamil</option>
+        <option value="ml-IN">Malayalam</option>
+        <option value="bn-IN">Bengali</option>
+        <option value="or-IN">Odia</option>
+        <option value="pa-IN">Punjabi</option>
+      </select>
+    </div>
+
+    <!-- User Input -->
+    <textarea id="userQuery" placeholder="Type or speak your legal query..."></textarea>
+    <div class="buttons">
+      <button id="speakBtn">🎤 Speak</button>
+      <button id="submitBtn">Submit</button>
+    </div>
+
+    <!-- Output -->
+    <div class="output">
+      <h3>Response:</h3>
+      <p id="responseText">Your answer will appear here...</p>
+      <button id="listenBtn">🔊 Listen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
